@@ -4,537 +4,477 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Renacer Terapias</title>
-    <!-- Meta tag for SEO -->
+    <title>Renacer Terapias | Bienestar y terapias especializadas</title>
     <meta name="description"
-        content="Tu lugar para renovar el cuerpo y la mente. / Your place to renew body and mind. Terapias acuáticas y manuales profesionales.">
-    <!-- Google Fonts -->
+        content="Renacer Terapias es un espacio de bienestar con terapias acuáticas y manuales profesionales para aliviar tensiones, mejorar la movilidad y recuperar el equilibrio corporal.">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link
-        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap"
         rel="stylesheet">
-    <!-- Main Stylesheet -->
+
     <link rel="stylesheet" href="styles.css">
-    <!-- FontAwesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
-    <!-- Navbar -->
+    <a class="skip-link" href="#main-content">Saltar al contenido principal</a>
+
     <header class="navbar">
         <div class="nav-container">
-            <a href="#" class="logo">
-                <img src="media/img/logo.png" alt="Logo RenacerTerapias">
-                Renacer <span>Terapias</span>
+            <a href="#home" class="logo" aria-label="Renacer Terapias, ir al inicio">
+                <img src="media/img/logo.png" alt="Logo de Renacer Terapias">
+                <span class="logo-text">Renacer <strong>Terapias</strong></span>
             </a>
 
-            <button class="mobile-menu-btn" aria-label="Menu" id="mobile-menu-btn">
-                <i class="fa-solid fa-bars"></i>
+            <button class="mobile-menu-btn" id="mobile-menu-btn" type="button" aria-label="Abrir menú de navegación"
+                aria-controls="nav-links" aria-expanded="false">
+                <i class="fa-solid fa-bars" aria-hidden="true"></i>
             </button>
 
-            <nav class="nav-links" id="nav-links">
-                <a href="index.html#home"><span lang="es">Inicio</span><span lang="en">Home</span></a>
-                <a href="nosotros.html"><span lang="es">Nosotros</span><span lang="en">About Us</span></a>
-                <a href="index.html#services"><span lang="es">Servicios</span><span lang="en">Services</span></a>
-                <a href="index.html#rates"><span lang="es">Precios y Horarios</span><span lang="en">Rates &
-                        Hours</span></a>
-                <a href="index.html#contact"><span lang="es">Contacto</span><span lang="en">Contact</span></a>
+            <nav class="nav-links" id="nav-links" aria-label="Navegación principal">
+                <a href="#home">Inicio</a>
+                <a href="nosotros.html">Nosotros</a>
+                <a href="#services">Servicios</a>
+                <a href="#rates">Precios y horarios</a>
+                <a href="#contact">Contacto</a>
             </nav>
 
             <div class="controls">
-                <button id="lang-toggle" class="control-btn" aria-label="Toggle Language">
-                    <span class="lang-label">EN</span>
-                </button>
-                <button id="theme-toggle" class="control-btn" aria-label="Toggle Theme">
-                    <i class="fa-solid fa-moon"></i>
+                <button id="theme-toggle" class="control-btn" type="button" aria-label="Cambiar modo de color"
+                    title="Cambiar modo de color">
+                    <i class="fa-solid fa-moon" aria-hidden="true"></i>
                 </button>
             </div>
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-        <!-- Optional: background image via CSS -->
-        <div class="hero-overlay"></div>
-        <div class="hero-content">
-            <h1>
-                <span lang="es">Tu lugar para renovar el cuerpo y la mente.</span>
-                <span lang="en">Your place to renew body and mind.</span>
-            </h1>
-            <p>
-                <span lang="es">Descubre un espacio de bienestar diseñado para liberar tensiones y restaurar el
-                    equilibrio físico a través de terapias personalizadas.</span>
-                <span lang="en">Discover a wellness space designed to release tension and restore physical balance
-                    through personalized therapies.</span>
-            </p>
-            <a href="#contact" class="btn btn-primary">
-                <span lang="es">Agenda tu cita aquí</span>
-                <span lang="en">Book your appointment here</span>
-            </a>
-        </div>
-    </section>
+    <main id="main-content">
+        <section class="hero" id="home" aria-labelledby="hero-title">
+            <div class="hero-overlay" aria-hidden="true"></div>
 
-    <!-- About Section Redesign (Matches Image) -->
-    <section class="section about-home" id="about">
-        <div class="container about-home-container">
-            <div class="about-home-left">
-                <div class="about-home-title-container">
-                    <h2>
-                        <span lang="es">¿Por qué Renacer?</span>
-                        <span lang="en">Why Renacer?</span>
-                    </h2>
-                    <div class="title-underline-left"></div>
-                </div>
-                <p class="about-home-desc">
-                    <span lang="es">Elegimos este nombre porque creemos que cada sesión es una oportunidad para liberar
-                        las cargas del día y permitir que el cuerpo recupere su vitalidad natural. Renacer no es solo un
-                        espacio; es el momento donde el movimiento y el descanso se encuentran para renovar tu bienestar
-                        integral.</span>
-                    <span lang="en">We chose this name because we believe that every session is an opportunity to
-                        release the day's burdens and allow the body to recover its natural vitality. Renacer is not
-                        just a space; it is the moment where movement and rest meet to renew your overall
-                        well-being.</span>
+            <div class="hero-content">
+                <h1 id="hero-title">Tu lugar para renovar el cuerpo y la mente.</h1>
+                <p>
+                    Descubre un espacio de bienestar diseñado para liberar tensiones y restaurar el equilibrio físico
+                    a través de terapias personalizadas.
                 </p>
-
-                <div class="about-home-info-box">
-                    <div class="info-icon">
-                        <i class="fa-regular fa-user"></i>
-                    </div>
-                    <div class="info-content">
-                        <h4>
-                            <span lang="es">Atención Profesional</span>
-                            <span lang="en">Professional Care</span>
-                        </h4>
-                        <p>
-                            <span lang="es">Profesional con experiencia en Psicomotricidad Acuática, Pilates y Terapias
-                                de Relajación.</span>
-                            <span lang="en">Professional with experience in Aquatic Psychomotor Skills, Pilates, and
-                                Relaxation Therapies.</span>
-                        </p>
-                    </div>
-                </div>
+                <a href="#contact" class="btn btn-primary">Agenda tu cita aquí</a>
             </div>
+        </section>
 
-            <div class="about-home-right">
-                <div class="mission-wrapper">
-                    <!-- Decorative Circle behind the card -->
-                    <div class="mission-blob"></div>
-                    <div class="mission-card card">
-                        <h3>
-                            <span lang="es">Nuestra Misión</span>
-                            <span lang="en">Our Mission</span>
-                        </h3>
-                        <p>
-                            <span lang="es">Brindar un espacio profesional y especializado para el alivio de tensiones y
-                                la recuperación corporal, utilizando técnicas manuales y acuáticas de alta calidad que
-                                mejoren la calidad de vida de nuestros pacientes.</span>
-                            <span lang="en">To provide a professional and specialized space for tension relief and body
-                                recovery, using high-quality manual and aquatic techniques that improve our patients'
-                                quality of life.</span>
-                        </p>
+        <section class="section about-home" id="about" aria-labelledby="about-title">
+            <div class="container about-home-container">
+                <div class="about-home-left">
+                    <div class="about-home-title-container">
+                        <h2 id="about-title">¿Por qué Renacer?</h2>
+                        <div class="title-underline-left" aria-hidden="true"></div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Services Section -->
-    <section class="section services bg-light" id="services">
-        <div class="container">
-            <div class="section-title">
-                <h2>
-                    <span lang="es">Nuestros Servicios</span>
-                    <span lang="en">Our Services</span>
-                </h2>
-                <div class="title-underline"></div>
-            </div>
 
-            <div class="services-grid" style="gap: 3rem;">
-                <!-- Aquatic Therapy -->
-                <div class="service-card modern-card">
-                    <div class="card-header" style="background-image: url('media/img/Terapia Acuática.jpg');">
-                        <div class="card-overlay bg-warm"></div>
-                        <div class="card-badge">
-                            <span lang="es">Terapia Acuática</span>
-                            <span lang="en">Aquatic Therapy</span>
-                        </div>
-                    </div>
-                    <div class="card-body">
-                        <h3 class="card-title"><span lang="es">Psicomotricidad y Pilates Acuático</span><span
-                                lang="en">Aquatic Psychomotor and Pilates</span></h3>
-                        <div class="card-meta">
-                            <i class="fa-regular fa-clock"></i> 50 min
-                        </div>
-                        <p class="card-desc">
-                            <span lang="es">Enfoque en control corporal y fortalecimiento en el agua. Mejora tu
-                                movilidad con resistencia natural.</span>
-                            <span lang="en">Focus on body control and strengthening in the water. Improve your mobility
-                                with natural resistance.</span>
-                        </p>
-
-                        <div style="flex-grow: 1;"></div>
-                        <hr class="card-divider">
-
-                        <div class="card-footer-note">
-                            <i class="fa-solid fa-circle-exclamation"></i>
-                            <span lang="es">Uso de gorra de natación obligatorio.</span>
-                            <span lang="en">Swim cap is strictly required.</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Manual Therapies -->
-                <div class="service-card modern-card">
-                    <div class="card-header"
-                        style="background-image: url('https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80');">
-                        <div class="card-overlay bg-cool"></div>
-                        <div class="card-badge">
-                            <span lang="es">Terapias Manuales</span>
-                            <span lang="en">Manual Therapies</span>
-                        </div>
-                    </div>
-                    <div class="card-body">
-                        <div class="therapy-item">
-                            <h4><span lang="es">Masaje de Relajación Profunda</span><span lang="en">Deep Relaxation
-                                    Massage</span></h4>
-                            <p><span lang="es">Alivia el estrés y la tensión muscular general.</span><span
-                                    lang="en">Relieves stress and general muscle tension.</span></p>
-                        </div>
-                        <div class="therapy-item">
-                            <h4><span lang="es">Terapia de Liberación de Espalda</span><span lang="en">Back Release
-                                    Therapy</span></h4>
-                            <p><span lang="es">Enfoque específico en cervicales, lumbares y espalda.</span><span
-                                    lang="en">Specific focus on cervical, lumbar, and back areas.</span></p>
-                        </div>
-                        <div class="therapy-item">
-                            <h4><span lang="es">Experiencia Renacer</span><span lang="en">Renacer Experience</span></h4>
-                            <p><span lang="es">Sesión integral para una renovación completa.</span><span
-                                    lang="en">Comprehensive session for a complete renewal.</span></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Image Gallery Carousel -->
-            <div class="gallery-section">
-                <h3 class="gallery-title">
-                    <span lang="es">Equipamiento e Instalaciones</span>
-                    <span lang="en">Equipment & Facilities</span>
-                </h3>
-                <div class="carousel-container">
-                    <button class="carousel-btn prev-btn" id="prevBtn"><i class="fa-solid fa-chevron-left"></i></button>
-                    <div class="carousel-track-container">
-                        <ul class="carousel-track" id="carouselTrack">
-                            <li class="carousel-slide current-slide">
-                                <img src="https://images.unsplash.com/photo-1581453905869-775c7b399120?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
-                                    alt="Equipamiento" class="carousel-image">
-                            </li>
-                            <li class="carousel-slide">
-                                <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
-                                    alt="Zapatos especializados" class="carousel-image">
-                            </li>
-                            <li class="carousel-slide">
-                                <img src="https://images.unsplash.com/photo-1571556816524-766b1e6ca4a6?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
-                                    alt="Piscina techada" class="carousel-image">
-                            </li>
-                        </ul>
-                    </div>
-                    <button class="carousel-btn next-btn" id="nextBtn"><i
-                            class="fa-solid fa-chevron-right"></i></button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Policies Section -->
-    <section class="section policies" id="policies">
-
-        <!-- Wave Frame Top Separator -->
-        <div class="policies-wave-top">
-            <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
-                <path fill="#008B8B" opacity="0.15"
-                    d="M0,200L60,210C120,220,240,240,360,210C480,180,600,100,720,110C840,120,960,220,1080,240C1200,260,1320,200,1380,180L1440,160L1440,320L0,320Z">
-                </path>
-                <path fill="#008B8B" opacity="0.3"
-                    d="M0,160L60,140C120,120,240,100,360,130C480,160,600,240,720,230C840,220,960,140,1080,110C1200,80,1320,100,1380,120L1440,140L1440,320L0,320Z">
-                </path>
-                <path fill="#008B8B" opacity="0.5"
-                    d="M0,120L60,150C120,180,240,240,360,220C480,200,600,100,720,90C840,80,960,160,1080,180C1200,200,1320,160,1380,140L1440,120L1440,320L0,320Z">
-                </path>
-                <path fill="#006666"
-                    d="M0,180L60,170C120,160,240,140,360,150C480,160,600,200,720,210C840,220,960,200,1080,170C1200,140,1320,120,1380,130L1440,140L1440,320L0,320Z">
-                </path>
-            </svg>
-        </div>
-
-        <!-- Decorative Floating Orbs -->
-        <div class="policies-orb policies-orb-1"></div>
-        <div class="policies-orb policies-orb-2"></div>
-        <div class="policies-orb policies-orb-3"></div>
-
-        <div class="container policies-content">
-            <div class="section-title">
-                <h2 class="policies-heading">
-                    <span lang="es">Políticas de Servicio</span>
-                    <span lang="en">Service Policies</span>
-                </h2>
-                <div class="title-underline policies-underline"></div>
-                <p class="policies-subtitle">
-                    <span lang="es">Para garantizar la mejor experiencia en cada sesión</span>
-                    <span lang="en">To ensure the best experience in every session</span>
-                </p>
-            </div>
-
-            <div class="policies-grid">
-                <div class="policy-item" style="animation-delay: 0s;">
-                    <span class="policy-number">01</span>
-                    <div class="policy-icon"><i class="fa-regular fa-clock"></i></div>
-                    <h4><span lang="es">Puntualidad</span><span lang="en">Punctuality</span></h4>
-                    <p>
-                        <span lang="es">Te recomendamos llegar 10 minutos antes de tu cita para que puedas
-                            prepararte con calma. La sesión iniciará y finalizará en el horario programado.</span>
-                        <span lang="en">We recommend arriving 10 minutes before your appointment. The session will
-                            start and end at the scheduled time.</span>
-                    </p>
-                </div>
-
-                <div class="policy-item" style="animation-delay: 0.15s;">
-                    <span class="policy-number">02</span>
-                    <div class="policy-icon"><i class="fa-solid fa-calendar-xmark"></i></div>
-                    <h4><span lang="es">Cancelaciones</span><span lang="en">Cancellations</span></h4>
-                    <p>
-                        <span lang="es">Si necesitas reprogramar o cancelar, por favor avísanos con al menos 24
-                            horas de anticipación.</span>
-                        <span lang="en">If you need to reschedule or cancel, please let us know at least 24 hours in
-                            advance.</span>
-                    </p>
-                </div>
-
-                <div class="policy-item" style="animation-delay: 0.3s;">
-                    <span class="policy-number">03</span>
-                    <div class="policy-icon"><i class="fa-solid fa-person-swimming"></i></div>
-                    <h4><span lang="es">Terapia Acuática</span><span lang="en">Aquatic Therapy</span></h4>
-                    <p>
-                        <span lang="es">Es obligatorio el uso de gorra de natación. Recuerda traer tu traje de baño
-                            y toalla personal.</span>
-                        <span lang="en">A swim cap is mandatory. Please remember to bring your swimsuit and personal
-                            towel.</span>
-                    </p>
-                </div>
-
-                <div class="policy-item" style="animation-delay: 0.45s;">
-                    <span class="policy-number">04</span>
-                    <div class="policy-icon"><i class="fa-solid fa-lock"></i></div>
-                    <h4><span lang="es">Reservas</span><span lang="en">Bookings</span></h4>
-                    <p>
-                        <span lang="es">Toda atención se realiza bajo reserva previa para garantizar la exclusividad
-                            de tu espacio.</span>
-                        <span lang="en">All sessions are by appointment only to guarantee your private space.</span>
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Bottom Wave Separator -->
-        <div class="policies-wave-bottom">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 120" preserveAspectRatio="none">
-                <path fill="var(--bg-section)"
-                    d="M0,0L48,10C96,20,192,40,288,53.3C384,67,480,73,576,65C672,57,768,35,864,28C960,21,1056,29,1152,38.7C1248,48,1344,58,1392,63L1440,68L1440,120L1392,120C1344,120,1248,120,1152,120C1056,120,960,120,864,120C768,120,672,120,576,120C480,120,384,120,288,120C192,120,96,120,48,120L0,120Z">
-                </path>
-            </svg>
-        </div>
-    </section>
-
-    <!-- Pricing and Hours Section -->
-    <section class="section rates bg-light" id="rates">
-        <div class="container">
-            <div class="section-title">
-                <h2>
-                    <span lang="es">Precios y Horarios</span>
-                    <span lang="en">Rates & Hours</span>
-                </h2>
-                <div class="title-underline"></div>
-            </div>
-
-            <div class="rates-container" style="gap: 2rem; flex-wrap: wrap;">
-                <!-- Card 1: Aquatic Therapy -->
-                <div class="rate-card card">
-                    <div class="rate-header">
-                        <h3><span lang="es">Terapia Acuática</span><span lang="en">Aquatic Therapy</span></h3>
-                        <div class="price">$120.000 <span style="font-size: 1rem; color: var(--text-muted);">COP</span>
-                        </div>
-                    </div>
-                    <div class="rate-body">
-                        <p class="schedule">
-                            <i class="fa-regular fa-calendar-days"></i>
-                            <span lang="es"><strong>Horarios:</strong> Lunes a Sábado.</span>
-                            <span lang="en"><strong>Hours:</strong> Monday to Saturday.</span>
-                        </p>
-                        <p class="booking-note">
-                            <i class="fa-solid fa-clipboard-check"></i>
-                            <span lang="es">Atención exclusiva bajo reserva previa.</span>
-                            <span lang="en">Exclusive care by appointment only.</span>
-                        </p>
-                    </div>
-                    <div class="rate-footer">
-                        <a href="#contact" class="btn btn-primary">
-                            <span lang="es">Agendar Cita</span>
-                            <span lang="en">Book Now</span>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Card 2: Manual Therapies -->
-                <div class="rate-card card" style="border-top-color: var(--secondary);">
-                    <div class="rate-header">
-                        <h3><span lang="es">Terapias Manuales</span><span lang="en">Manual Therapies</span></h3>
-                        <div class="price" style="color: var(--secondary); font-size: 2.2rem;">
-                            <span lang="es">Desde $90.000</span>
-                            <span lang="en">From $90.000</span>
-                            <span style="font-size: 1rem; color: var(--text-muted);">COP</span>
-                        </div>
-                    </div>
-                    <div class="rate-body">
-                        <p class="schedule">
-                            <i class="fa-regular fa-calendar-days"></i>
-                            <span lang="es"><strong>Horarios:</strong> Lunes a Sábado.</span>
-                            <span lang="en"><strong>Hours:</strong> Monday to Saturday.</span>
-                        </p>
-                        <p class="booking-note">
-                            <i class="fa-solid fa-clipboard-check"></i>
-                            <span lang="es">Sujeto a tipo de masaje.</span>
-                            <span lang="en">Subject to massage type.</span>
-                        </p>
-                    </div>
-                    <div class="rate-footer">
-                        <a href="#contact" class="btn btn-outline"
-                            style="border-color: var(--secondary); color: var(--secondary);">
-                            <span lang="es">Consultar</span>
-                            <span lang="en">Inquire</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="section contact" id="contact">
-        <div class="container">
-            <div class="section-title">
-                <h2>
-                    <span lang="es">Contacto y Reservas</span>
-                    <span lang="en">Contact & Bookings</span>
-                </h2>
-                <div class="title-underline"></div>
-            </div>
-
-            <div class="contact-grid">
-                <div class="contact-info card">
-                    <h3>
-                        <span lang="es">Déjanos un mensaje</span>
-                        <span lang="en">Leave us a message</span>
-                    </h3>
-                    <p class="contact-desc">
-                        <span lang="es">Estamos aquí para ayudarte a encontrar el equilibrio perfecto. Contáctanos por
-                            cualquiera de nuestros medios.</span>
-                        <span lang="en">We are here to help you find the perfect balance. Contact us through any of our
-                            channels.</span>
+                    <p class="about-home-desc">
+                        Elegimos este nombre porque creemos que cada sesión es una oportunidad para liberar las cargas
+                        del día y permitir que el cuerpo recupere su vitalidad natural. Renacer no es solo un espacio:
+                        es el momento donde el movimiento y el descanso se encuentran para renovar tu bienestar
+                        integral.
                     </p>
 
-                    <div class="contact-methods">
-                        <a href="https://wa.me/+573105778374" class="contact-method" target="_blank">
-                            <div class="method-icon whatsapp"><i class="fa-brands fa-whatsapp"></i></div>
-                            <div>
-                                <span class="method-title">WhatsApp</span>
+                    <div class="about-home-info-box">
+                        <div class="info-icon" aria-hidden="true">
+                            <i class="fa-regular fa-user"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Atención profesional</h3>
+                            <p>
+                                Profesional con experiencia en psicomotricidad acuática, pilates y terapias de
+                                relajación.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-home-right">
+                    <div class="mission-wrapper">
+                        <div class="mission-blob" aria-hidden="true"></div>
+
+                        <article class="mission-card card">
+                            <h3>Nuestra misión</h3>
+                            <p>
+                                Brindar un espacio profesional y especializado para el alivio de tensiones y la
+                                recuperación corporal, utilizando técnicas manuales y acuáticas de alta calidad que
+                                mejoren la calidad de vida de nuestros pacientes.
+                            </p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section services bg-light" id="services" aria-labelledby="services-title">
+            <div class="container">
+                <div class="section-title">
+                    <h2 id="services-title">Nuestros servicios</h2>
+                    <div class="title-underline" aria-hidden="true"></div>
+                </div>
+
+                <div class="services-grid">
+                    <article class="service-card modern-card">
+                        <div class="card-header card-header-aquatic" role="img"
+                            aria-label="Sesión de terapia acuática en piscina interior">
+                            <div class="card-overlay bg-warm" aria-hidden="true"></div>
+                            <div class="card-badge">Terapia acuática</div>
+                        </div>
+
+                        <div class="card-body">
+                            <h3 class="card-title">Psicomotricidad y pilates acuático</h3>
+                            <div class="card-meta">
+                                <i class="fa-regular fa-clock" aria-hidden="true"></i>
+                                <span>50 min</span>
                             </div>
-                        </a>
 
-                        <a href="https://instagram.com/psicoterapias00renacer" class="contact-method" target="_blank">
-                            <div class="method-icon instagram"><i class="fa-brands fa-instagram"></i></div>
-                            <div>
-                                <span class="method-title">Instagram</span>
-                            </div>
-                        </a>
+                            <p class="card-desc">
+                                Enfoque en control corporal y fortalecimiento en el agua. Mejora tu movilidad con
+                                resistencia natural y una práctica guiada de forma segura.
+                            </p>
 
-                        <a href="https://facebook.com/ana.gonzalez.581051" class="contact-method" target="_blank">
-                            <div class="method-icon facebook"><i class="fa-brands fa-facebook-f"></i></div>
-                            <div>
-                                <span class="method-title">Facebook</span>
+                            <hr class="card-divider">
+
+                            <div class="card-footer-note">
+                                <i class="fa-solid fa-circle-exclamation" aria-hidden="true"></i>
+                                <span>Uso de gorra de natación obligatorio.</span>
                             </div>
-                        </a>
-                    </div>
+                        </div>
+                    </article>
+
+                    <article class="service-card modern-card">
+                        <div class="card-header card-header-manual" role="img"
+                            aria-label="Terapia manual y masaje relajante en camilla">
+                            <div class="card-overlay bg-cool" aria-hidden="true"></div>
+                            <div class="card-badge">Terapias manuales</div>
+                        </div>
+
+                        <div class="card-body">
+                            <div class="therapy-item">
+                                <h3>Masaje de relajación profunda</h3>
+                                <p>Alivia el estrés y la tensión muscular general.</p>
+                            </div>
+
+                            <div class="therapy-item">
+                                <h3>Terapia de liberación de espalda</h3>
+                                <p>Enfoque específico en cervicales, lumbares y espalda.</p>
+                            </div>
+
+                            <div class="therapy-item">
+                                <h3>Experiencia Renacer</h3>
+                                <p>Sesión integral para una renovación completa.</p>
+                            </div>
+                        </div>
+                    </article>
                 </div>
 
-                <div class="contact-form-container card">
-                    <form id="contactForm" class="contact-form">
-                        <div class="form-group">
-                            <label for="name">
-                                <span lang="es">Nombre Completo</span>
-                                <span lang="en">Full Name</span>
-                            </label>
-                            <input type="text" id="name" required placeholder="Ej: Maria Lopez">
-                        </div>
+                <div class="gallery-section" aria-labelledby="gallery-title">
+                    <div class="gallery-header">
+                        <h3 class="gallery-title" id="gallery-title">Equipamiento e instalaciones</h3>
+                        <p class="gallery-intro">
+                            Espacios diseñados para ofrecer una experiencia cómoda, profesional y visualmente cuidada.
+                        </p>
+                    </div>
 
-                        <div class="form-group">
-                            <label for="phone">
-                                <span lang="es">Teléfono / WhatsApp</span>
-                                <span lang="en">Phone / WhatsApp</span>
-                            </label>
-                            <input type="tel" id="phone" required placeholder="Ej: +57 300 000 0000">
-                        </div>
-
-                        <div class="form-group">
-                            <label for="service">
-                                <span lang="es">Servicio de Interés</span>
-                                <span lang="en">Service of Interest</span>
-                            </label>
-                            <select id="service" required>
-                                <option value="" disabled selected lang="es">Selecciona un servicio...</option>
-                                <option value="" disabled selected lang="en">Select a service...</option>
-                                <option value="aquatic" lang="es">Terapia Acuática</option>
-                                <option value="aquatic" lang="en">Aquatic Therapy</option>
-                                <option value="manual" lang="es">Terapias Manuales</option>
-                                <option value="manual" lang="en">Manual Therapies</option>
-                            </select>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="message">
-                                <span lang="es">Mensaje (Opcional)</span>
-                                <span lang="en">Message (Optional)</span>
-                            </label>
-                            <textarea id="message" rows="4"></textarea>
-                        </div>
-
-                        <button type="submit" class="btn btn-primary submit-btn">
-                            <span lang="es">Agenda tu cita aquí</span>
-                            <span lang="en">Book your appointment here</span>
-                            <i class="fa-solid fa-paper-plane"></i>
+                    <div class="carousel-container" aria-roledescription="carousel"
+                        aria-label="Galería de equipamiento e instalaciones">
+                        <button class="carousel-btn prev-btn" id="prevBtn" type="button"
+                            aria-label="Imagen anterior">
+                            <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
                         </button>
-                    </form>
+
+                        <div class="carousel-track-container" aria-live="polite">
+                            <ul class="carousel-track" id="carouselTrack">
+                                <li class="carousel-slide current-slide">
+                                    <img src="https://images.unsplash.com/photo-1581453905869-775c7b399120?auto=format&fit=crop&w=1200&q=80"
+                                        alt="Piscina terapéutica interior con ambiente luminoso y limpio"
+                                        class="carousel-image" loading="lazy">
+                                    <div class="carousel-caption">Piscina terapéutica interior</div>
+                                </li>
+
+                                <li class="carousel-slide">
+                                    <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1200&q=80"
+                                        alt="Elementos de apoyo para trabajo corporal y fortalecimiento"
+                                        class="carousel-image" loading="lazy">
+                                    <div class="carousel-caption">Equipamiento de apoyo terapéutico</div>
+                                </li>
+
+                                <li class="carousel-slide">
+                                    <img src="https://images.unsplash.com/photo-1571556816524-766b1e6ca4a6?auto=format&fit=crop&w=1200&q=80"
+                                        alt="Instalación cubierta para sesiones acuáticas guiadas"
+                                        class="carousel-image" loading="lazy">
+                                    <div class="carousel-caption">Instalaciones cubiertas y confortables</div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <button class="carousel-btn next-btn" id="nextBtn" type="button"
+                            aria-label="Imagen siguiente">
+                            <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+                        </button>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Footer -->
+        <section class="section policies" id="policies" aria-labelledby="policies-title">
+            <div class="policies-wave-top" aria-hidden="true">
+                <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
+                    <path fill="#008B8B" opacity="0.15"
+                        d="M0,200L60,210C120,220,240,240,360,210C480,180,600,100,720,110C840,120,960,220,1080,240C1200,260,1320,200,1380,180L1440,160L1440,320L0,320Z">
+                    </path>
+                    <path fill="#008B8B" opacity="0.3"
+                        d="M0,160L60,140C120,120,240,100,360,130C480,160,600,240,720,230C840,220,960,140,1080,110C1200,80,1320,100,1380,120L1440,140L1440,320L0,320Z">
+                    </path>
+                    <path fill="#008B8B" opacity="0.5"
+                        d="M0,120L60,150C120,180,240,240,360,220C480,200,600,100,720,90C840,80,960,160,1080,180C1200,200,1320,160,1380,140L1440,120L1440,320L0,320Z">
+                    </path>
+                    <path fill="#006666"
+                        d="M0,180L60,170C120,160,240,140,360,150C480,160,600,200,720,210C840,220,960,200,1080,170C1200,140,1320,120,1380,130L1440,140L1440,320L0,320Z">
+                    </path>
+                </svg>
+            </div>
+
+            <div class="policies-orb policies-orb-1" aria-hidden="true"></div>
+            <div class="policies-orb policies-orb-2" aria-hidden="true"></div>
+            <div class="policies-orb policies-orb-3" aria-hidden="true"></div>
+
+            <div class="container policies-content">
+                <div class="section-title">
+                    <h2 class="policies-heading" id="policies-title">Políticas de servicio</h2>
+                    <div class="title-underline policies-underline" aria-hidden="true"></div>
+                    <p class="policies-subtitle">Para garantizar la mejor experiencia en cada sesión</p>
+                </div>
+
+                <div class="policies-grid">
+                    <article class="policy-item">
+                        <span class="policy-number" aria-hidden="true">01</span>
+                        <div class="policy-icon" aria-hidden="true">
+                            <i class="fa-regular fa-clock"></i>
+                        </div>
+                        <h3>Puntualidad</h3>
+                        <p>
+                            Te recomendamos llegar 10 minutos antes de tu cita para que puedas prepararte con calma.
+                            La sesión iniciará y finalizará en el horario programado.
+                        </p>
+                    </article>
+
+                    <article class="policy-item">
+                        <span class="policy-number" aria-hidden="true">02</span>
+                        <div class="policy-icon" aria-hidden="true">
+                            <i class="fa-solid fa-calendar-xmark"></i>
+                        </div>
+                        <h3>Cancelaciones</h3>
+                        <p>
+                            Si necesitas reprogramar o cancelar, por favor avísanos con al menos 24 horas de
+                            anticipación.
+                        </p>
+                    </article>
+
+                    <article class="policy-item">
+                        <span class="policy-number" aria-hidden="true">03</span>
+                        <div class="policy-icon" aria-hidden="true">
+                            <i class="fa-solid fa-person-swimming"></i>
+                        </div>
+                        <h3>Terapia acuática</h3>
+                        <p>
+                            Es obligatorio el uso de gorra de natación. Recuerda traer tu traje de baño y toalla
+                            personal.
+                        </p>
+                    </article>
+
+                    <article class="policy-item">
+                        <span class="policy-number" aria-hidden="true">04</span>
+                        <div class="policy-icon" aria-hidden="true">
+                            <i class="fa-solid fa-lock"></i>
+                        </div>
+                        <h3>Reservas</h3>
+                        <p>
+                            Toda atención se realiza bajo reserva previa para garantizar la exclusividad de tu espacio.
+                        </p>
+                    </article>
+                </div>
+            </div>
+
+            <div class="policies-wave-bottom" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 120" preserveAspectRatio="none">
+                    <path fill="var(--bg-section)"
+                        d="M0,0L48,10C96,20,192,40,288,53.3C384,67,480,73,576,65C672,57,768,35,864,28C960,21,1056,29,1152,38.7C1248,48,1344,58,1392,63L1440,68L1440,120L1392,120C1344,120,1248,120,1152,120C1056,120,960,120,864,120C768,120,672,120,576,120C480,120,384,120,288,120C192,120,96,120,48,120L0,120Z">
+                    </path>
+                </svg>
+            </div>
+        </section>
+
+        <section class="section rates bg-light" id="rates" aria-labelledby="rates-title">
+            <div class="container">
+                <div class="section-title">
+                    <h2 id="rates-title">Precios y horarios</h2>
+                    <div class="title-underline" aria-hidden="true"></div>
+                </div>
+
+                <div class="rates-container">
+                    <article class="rate-card card">
+                        <div class="rate-header">
+                            <h3>Terapia acuática</h3>
+                            <div class="price">
+                                $120.000
+                                <span class="price-label">COP</span>
+                            </div>
+                        </div>
+
+                        <div class="rate-body">
+                            <p class="schedule">
+                                <i class="fa-regular fa-calendar-days" aria-hidden="true"></i>
+                                <span><strong>Horarios:</strong> Lunes a sábado.</span>
+                            </p>
+
+                            <p class="booking-note">
+                                <i class="fa-solid fa-clipboard-check" aria-hidden="true"></i>
+                                <span>Atención exclusiva bajo reserva previa.</span>
+                            </p>
+                        </div>
+
+                        <div class="rate-footer">
+                            <a href="#contact" class="btn btn-primary">Agendar cita</a>
+                        </div>
+                    </article>
+
+                    <article class="rate-card card rate-card--secondary">
+                        <div class="rate-header">
+                            <h3>Terapias manuales</h3>
+                            <div class="price">
+                                Desde $90.000
+                                <span class="price-label">COP</span>
+                            </div>
+                        </div>
+
+                        <div class="rate-body">
+                            <p class="schedule">
+                                <i class="fa-regular fa-calendar-days" aria-hidden="true"></i>
+                                <span><strong>Horarios:</strong> Lunes a sábado.</span>
+                            </p>
+
+                            <p class="booking-note">
+                                <i class="fa-solid fa-clipboard-check" aria-hidden="true"></i>
+                                <span>Sujeto a tipo de masaje.</span>
+                            </p>
+                        </div>
+
+                        <div class="rate-footer">
+                            <a href="#contact" class="btn btn-secondary">Consultar</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section contact" id="contact" aria-labelledby="contact-title">
+            <div class="container">
+                <div class="section-title">
+                    <h2 id="contact-title">Contacto y reservas</h2>
+                    <div class="title-underline" aria-hidden="true"></div>
+                </div>
+
+                <div class="contact-grid">
+                    <article class="contact-info card">
+                        <h3>Déjanos un mensaje</h3>
+                        <p class="contact-desc">
+                            Estamos aquí para ayudarte a encontrar el equilibrio perfecto. Contáctanos por cualquiera
+                            de nuestros medios.
+                        </p>
+
+                        <div class="contact-methods">
+                            <a href="https://wa.me/573105778374" class="contact-method" target="_blank"
+                                rel="noopener noreferrer" aria-label="Escribir por WhatsApp">
+                                <div class="method-icon whatsapp" aria-hidden="true">
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                </div>
+                                <div>
+                                    <span class="method-title">WhatsApp</span>
+                                    <span class="method-detail">Atención rápida para reservas</span>
+                                </div>
+                            </a>
+
+                            <a href="https://www.instagram.com/psicoterapias00renacer/" class="contact-method"
+                                target="_blank" rel="noopener noreferrer" aria-label="Abrir perfil de Instagram">
+                                <div class="method-icon instagram" aria-hidden="true">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </div>
+                                <div>
+                                    <span class="method-title">Instagram</span>
+                                    <span class="method-detail">Novedades y contenido visual</span>
+                                </div>
+                            </a>
+
+                            <a href="https://facebook.com/ana.gonzalez.581051" class="contact-method" target="_blank"
+                                rel="noopener noreferrer" aria-label="Abrir perfil de Facebook">
+                                <div class="method-icon facebook" aria-hidden="true">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </div>
+                                <div>
+                                    <span class="method-title">Facebook</span>
+                                    <span class="method-detail">Más información y contacto</span>
+                                </div>
+                            </a>
+                        </div>
+                    </article>
+
+                    <div class="contact-form-container card">
+                        <form id="contactForm" class="contact-form">
+                            <div class="form-group">
+                                <label for="name">Nombre completo</label>
+                                <input type="text" id="name" name="name" required autocomplete="name"
+                                    placeholder="Ej: María López">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone">Teléfono / WhatsApp</label>
+                                <input type="tel" id="phone" name="phone" required autocomplete="tel"
+                                    placeholder="Ej: +57 300 000 0000">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="service">Servicio de interés</label>
+                                <select id="service" name="service" required>
+                                    <option value="" selected disabled>Selecciona un servicio...</option>
+                                    <option value="aquatic">Terapia acuática</option>
+                                    <option value="manual">Terapias manuales</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Mensaje (opcional)</label>
+                                <textarea id="message" name="message" rows="4"
+                                    placeholder="Cuéntanos brevemente qué servicio te interesa o cuál es tu necesidad."></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary submit-btn">
+                                <span>Agenda tu cita aquí</span>
+                                <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
     <footer>
         <div class="container">
             <div class="footer-content">
                 <div class="footer-brand">
-                    <img src="media/img/logo.png" alt="Logo RenacerTerapias"> Renacer Terapias
+                    <img src="media/img/logo.png" alt="Logo de Renacer Terapias">
+                    <span>Renacer Terapias</span>
                 </div>
-                <p>
-                    <span lang="es">&copy; 2026 Renacer Terapias. Todos los derechos reservados.</span>
-                    <span lang="en">&copy; 2026 Renacer Terapias. All rights reserved.</span>
-                </p>
+                <p>&copy; 2026 Renacer Terapias. Todos los derechos reservados.</p>
             </div>
         </div>
     </footer>
 
-    <!-- Main JavaScript -->
     <script src="script.js"></script>
 </body>
 
